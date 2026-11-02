@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RETINAL + PEPTIDES. NO DRYNESS.</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* 캡슐 가이드 포맷, 색만 레티날 펩타이드 패키지(퍼플 + 라임) */
+:root{
+  --bg:#F2F3E8; --card:#FFFFFF; --ink:#1F1B2A; --sub:#5E5A68; --line:#DEDDD3;
+  --pt:#6B47B3; --pt-ink:#4A2C83; --pt-soft:#EEE8F8; --lime:#C9D91E; --lime-soft:#F4F7CF;
+  --logo-filter:none; --shadow:0 2px 14px rgba(30,25,45,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#17161B; --card:#221F28; --ink:#EEECF2; --sub:#ABA6B5; --line:#36323D;
+    --pt:#9C7BE0; --pt-ink:#C6B2F2; --pt-soft:#2D2540; --lime:#D3E33A; --lime-soft:#33361A;
+    --logo-filter:invert(1); --shadow:none; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#17161B; --card:#221F28; --ink:#EEECF2; --sub:#ABA6B5; --line:#36323D;
+  --pt:#9C7BE0; --pt-ink:#C6B2F2; --pt-soft:#2D2540; --lime:#D3E33A; --lime-soft:#33361A;
+  --logo-filter:invert(1); --shadow:none; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Karla,system-ui,sans-serif}
+.page{max-width:1040px;margin:0 auto;padding:0 16px 56px}
+img,video{display:block;max-width:100%}
+b,strong{font-weight:700}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;margin:0;letter-spacing:-.01em}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0 0}
+.top img{height:16px;filter:var(--logo-filter)}
+.top span{font:700 12px Poppins;letter-spacing:.14em;color:var(--sub);text-transform:uppercase}
+
+.hero{margin-top:18px;background:var(--card);border-radius:24px;box-shadow:var(--shadow);padding:34px 28px 26px;text-align:center;overflow:hidden}
+.hero .kick{font:700 13px Poppins;letter-spacing:.16em;color:var(--pt-ink);text-transform:uppercase}
+.hero h1{font-size:clamp(30px,6vw,54px);font-weight:800;line-height:1.05;margin:10px 0 10px;text-transform:uppercase}
+.hero h1 i{font-style:normal;color:var(--pt)}
+.hero p{margin:0 auto;max-width:560px;color:var(--sub);font-size:18px}
+.setbox{margin:26px auto 0;max-width:620px;border:2px dashed var(--pt);border-radius:22px;padding:16px 18px 18px;background:var(--pt-soft)}
+.settitle{font:800 clamp(18px,2.6vw,22px) Poppins;color:var(--pt-ink);display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.jars{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;margin:14px auto 0}
+.plus{font:800 clamp(30px,5vw,44px) Poppins;color:var(--pt)}
+.jars figcaption span{display:block;font:600 13px Karla;color:var(--sub)}
+.jars figure{margin:0;position:relative}
+.jars img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px}
+.jars figcaption{font:700 14px Poppins;margin-top:8px}
+.badge{display:inline-block;background:var(--pt);color:#fff;font:800 11px Poppins;letter-spacing:.1em;text-transform:uppercase;border-radius:20px;padding:4px 10px;vertical-align:2px}
+.jars .badge{position:absolute;top:10px;left:10px}
+
+.sec{margin-top:44px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--pt);color:#fff;font:800 16px/34px Poppins;text-align:center}
+.num.sm{display:inline-block;width:26px;height:26px;font-size:13px;line-height:26px}
+.sh h2{font-size:clamp(22px,3.6vw,30px);font-weight:800}
+
+.shot{position:relative;overflow:hidden;aspect-ratio:9/16;background:#000}
+.shot video,.shot img{width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:8px;right:8px;text-align:center;font:700 clamp(16px,2.4vw,21px)/1.15 Poppins;color:#fff;
+  text-shadow:0 0 3px #000,0 0 3px #000,0 1px 2px #000}
+
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border-top:6px solid var(--lime)}
+.card .body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pair{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font:800 17px/1.25 Poppins}
+.step .pair{flex-wrap:nowrap;align-items:flex-start}
+.step .pair .num{margin-top:-2px}
+.bestfor{margin:-2px 0 0;align-self:flex-start;background:var(--lime-soft);color:var(--ink);font:600 14px Poppins;border-radius:8px;padding:4px 10px}
+.bestfor b{color:var(--pt-ink)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid2 .step{flex-direction:row}
+.grid2 .step .shot{flex:none;width:42%;aspect-ratio:auto;align-self:stretch;min-height:320px}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}}
+.blk ul.do li{border-top:0;padding:4px 0 4px 22px}
+.blk ul.do li::before{top:11px}
+.blk h5{margin:0 0 2px;font:800 12px Poppins;letter-spacing:.08em;text-transform:uppercase;color:var(--pt)}
+.blk .onscreen{margin-top:2px}
+.blk + .blk{padding-top:8px;border-top:1px dashed var(--line)}
+.reflink{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;justify-content:center;font:700 15px Poppins;border:2px solid var(--pt);color:var(--pt-ink);border-radius:14px;padding:10px 12px;text-decoration:none}
+.reflink span{font:600 13px Karla;color:var(--sub)}
+.reflink:hover{background:var(--pt-soft)}
+.reflink:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.desc{margin:0;font-size:15px;color:var(--sub)}
+.say{display:block;padding:8px 12px;border-radius:10px;background:var(--bg);font-size:15px;font-style:italic}
+.onscreen{display:inline-block;background:var(--ink);color:var(--card);font:700 15px/1.3 Poppins;padding:6px 12px;border-radius:10px;margin-top:6px}
+.onscreen.sm{display:table;font-size:14px}
+
+ul.do{list-style:none;padding:0;margin:0}
+ul.do li{position:relative;padding:8px 0 8px 22px;border-top:1px solid var(--line);font-size:15px}
+ul.do li:first-child{border-top:0}
+ul.do li::before{content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--pt)}
+
+.pick{margin-top:auto;font:700 15px Poppins;border:2px solid var(--pt);background:transparent;color:var(--pt-ink);border-radius:14px;padding:10px 12px;cursor:pointer}
+.pick:hover{background:var(--pt-soft)}
+.pick:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.opt[aria-current="true"]{outline:3px solid var(--pt);outline-offset:-3px}
+.opt[aria-current="true"] .pick{background:var(--pt);color:#fff}
+.hint{margin:-4px 0 16px;font:700 18px Poppins;color:var(--pt-ink)}
+
+.concept{margin-top:8px}
+.concept + .concept{margin-top:36px}
+.conhead{font-size:clamp(18px,2.8vw,22px);font-weight:800;color:var(--pt-ink);margin-bottom:12px}
+#guide[data-lane] .step[data-hv]{display:none}
+#guide[data-lane="a"] .step[data-hv="a"],#guide[data-lane="b"] .step[data-hv="b"],#guide[data-lane="c"] .step[data-hv="c"]{display:flex}
+.how{margin:0 0 16px;background:var(--pt-soft);color:var(--pt-ink);border-radius:16px;padding:14px 18px;font-size:16px}
+
+.refs{display:grid;grid-template-columns:repeat(3,minmax(0,280px));gap:20px;justify-content:center}
+.ref{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.ref video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.ref .meta{padding:12px 14px 14px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.ref .meta a{color:var(--ink);font:700 15px Poppins;text-decoration:none}
+.ref .meta a:hover{color:var(--pt-ink)}
+.ref p{margin:0;width:100%;color:var(--sub);font-size:14px}
+
+.must{background:var(--card);border-radius:24px;padding:24px;box-shadow:var(--shadow);border:2px solid var(--pt)}
+.kw{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
+.kw span{background:var(--pt-soft);color:var(--pt-ink);font:800 clamp(18px,3vw,26px) Poppins;border-radius:14px;padding:10px 20px}
+.must p{margin:0;font-size:17px}
+.rules{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px}
+.rbox{background:var(--card);border-radius:20px;padding:18px 20px;box-shadow:var(--shadow)}
+.rbox h3{font-size:17px;margin-bottom:6px}
+.rbox.no ul.do li::before{background:var(--sub)}
+.tags{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:16px;line-height:2}
+.tags code{font:600 15px Karla;background:var(--bg);padding:2px 8px;border-radius:6px;display:inline-block;margin:2px 0}
+
+.pmain{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:28px;align-items:center;background:var(--card);border-radius:24px;padding:24px 28px;box-shadow:var(--shadow);border:3px solid var(--c,var(--pt));margin-bottom:16px}
+.pmain img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px}
+.pmain h3{font-size:clamp(22px,3.4vw,30px);font-weight:800;margin:10px 0 4px}
+.pmain .for{margin:0 0 6px;font-size:17px;color:var(--pt-ink)}
+.pmain .meta{margin:0 0 10px;font-size:14px;color:var(--sub)}
+.pmain ul.do li{font-size:16px}
+.spec{margin:6px 0 0;display:grid;gap:10px}
+.spec dt{font:800 14px Poppins;color:var(--pt);letter-spacing:.02em}
+.spec dd{margin:2px 0 0;font-size:16px}
+.pmain .spec{text-align:left}
+.pairnote{margin:-6px 0 16px;font:700 17px Poppins;color:var(--pt-ink)}
+footer{margin-top:40px;text-align:center;color:var(--sub);font-size:13px}
+footer img{height:13px;margin:0 auto 8px;filter:var(--logo-filter)}
+
+@media (max-width:860px){
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .refs{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .pmain{grid-template-columns:1fr;text-align:center}
+  .pmain img{max-width:240px;margin:0 auto}
+  .pmain ul.do{text-align:left}
+}
+@media (max-width:520px){
+  .hero{padding:26px 16px 20px}
+  .grid3{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+  #sec1 .grid3{grid-template-columns:1fr}
+  #sec1 .card{display:grid;grid-template-columns:120px minmax(0,1fr)}
+  #sec1 .shot{aspect-ratio:auto;height:100%}
+  #sec1 .cap{font-size:13px}
+  .card .body{padding:12px}
+  .pair{font-size:15px}
+  ul.do li{font-size:14px}
+  .refs{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .ref .meta{padding:8px}
+  .ref .meta a{font-size:12px}
+  .ref .meta .badge{font-size:9px;padding:3px 7px}
+  .ref p{font-size:12px}
+  .rules{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="top"><img src="img/logo-black.png" alt="VT Cosmetics"><span>Creator Brief</span></div>
+
+<section class="hero">
+  <div class="kick">VT Retinal Peptide Set: Serum + Spot Cream</div>
+  <h1>Next-gen retinal.<br><i>No redness. No itch.</i></h1>
+  <p><b>Retinal</b> for fine lines. <b>Peptides</b> for dehydrated skin.<br>Together, without the redness and itching retinal is known for.</p>
+  <div class="setbox">
+    <div class="settitle"><span class="badge">Use as a pair</span> Retinal Peptide Set</div>
+    <div class="jars">
+      <figure><img src="img/showcase.jpg" alt="Retinal Peptide Serum dropper bottle on a lime circle"><figcaption><b>Step 1.</b> Serum<span>all over face and neck</span></figcaption></figure>
+      <div class="plus" aria-hidden="true">+</div>
+      <figure><img src="img/sq-showcase.jpg" alt="Retinal Peptide Spot Cream tube with a yellow ribbon"><figcaption><b>Step 2.</b> Spot Cream<span>on deep lines</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sec1">
+  <div class="sh"><span class="num">1</span><h2>Pick your hook</h2></div>
+  <div class="grid3">
+    <article class="card opt" data-id="a">
+      <div class="shot"><video src="img/o1-pinch.mp4" poster="img/o1-pinch.jpg" autoplay muted loop playsinline aria-label="Wrinkle or dehydration line?"></video><div class="cap" style="top:70%">wrinkle or dehydration line?</div></div>
+      <div class="body">
+        <div class="pair"><span class="badge">Hook 1</span> Wrinkle or dehydration line?</div>
+        <p class="bestfor">Best for <b>explainer creators</b></p>
+        <p class="desc">Open with the <b>pinch test</b>. Pinch and let go: if the line <b>stays</b>, it's a <b>wrinkle</b>. Pinch hydrated skin: if it <b>disappears</b>, it's a <b>dehydration line</b>.</p>
+        <span class="say">"if it stays, it's a wrinkle. if it's gone, it's a dehydration line"</span>
+        <a class="reflink" href="https://www.tiktok.com/@itsbabykelz/video/7595710945465240887" target="_blank" rel="noopener">▶ Reference @itsbabykelz <span>4.3M views</span></a>
+      </div>
+    </article>
+    <article class="card opt" data-id="b">
+      <div class="shot"><video src="img/o2-lines.mp4" poster="img/o2-lines.jpg" autoplay muted loop playsinline aria-label="Stop using retinal alone"></video><div class="cap" style="top:9%">stop using retinal alone</div></div>
+      <div class="body">
+        <div class="pair"><span class="badge">Hook 2</span> Stop using retinal alone</div>
+        <p class="bestfor">Best for <b>explainer + visual creators</b></p>
+        <p class="desc">Open on your <b>forehead</b>, <b>smile lines</b> and <b>neck lines</b> up close. Say retinal alone isn't enough, you need <b>peptides</b> with it.</p>
+        <span class="say">"stop using retinal alone. you need peptides with it"</span>
+        <a class="reflink" href="https://www.tiktok.com/@salliqueen/video/7681025004040998165" target="_blank" rel="noopener">▶ Reference @salliqueen <span>172K views</span></a>
+      </div>
+    </article>
+    <article class="card opt" data-id="c">
+      <div class="shot"><video src="img/o3-s2.mp4" poster="img/o3-s2.jpg" autoplay muted loop playsinline aria-label="I quit retinal 3 times, until this"></video><div class="cap" style="top:9%">I quit retinal 3 times</div></div>
+      <div class="body">
+        <div class="pair"><span class="badge">Hook 3</span> I quit retinal 3 times, until this</div>
+        <p class="bestfor">Best for <b>visual creators</b></p>
+        <p class="desc">Open on <b>retinal side effects</b>: redness, itching, peeling. Your old retinal did nothing or made you <b>dry, itchy and red</b>, so you quit 3 times. Then show smooth skin: <b>the answer is retinal peptide</b>.</p>
+        <span class="say">"I quit retinal 3 times. then I found retinal peptide"</span>
+        <a class="reflink" href="https://www.tiktok.com/@illaalvarez/video/7700642542013959431" target="_blank" rel="noopener">▶ Reference @illaalvarez <span>194K views</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="guide">
+  <div class="sh"><span class="num">2</span><h2>Shot by shot</h2></div>
+  <div class="how">⭐ Same shots for every hook. After your hook: serum all over, spot cream and a wrap on deep lines, then end on <b>smooth skin</b>.</div>
+  <div class="grid2">
+    <article class="card step">
+      <div class="shot"><video src="img/o2-s3.mp4" poster="img/o2-s3.jpg" autoplay muted loop playsinline aria-label="Serum from a dropper on her cheek, then patted in over her face"></video></div>
+      <div class="body">
+        <div class="pair"><span class="num sm">1</span> Serum on your face and neck</div>
+        <div class="blk"><h5>How to film</h5><ul class="do"><li><b>A few drops</b> of the <b>Retinal Peptide Serum</b> all over your <b>face and neck</b></li></ul></div>
+        <div class="blk"><h5>Key message</h5><ul class="do"><li>In your own words: most retinals only help <b>wrinkles</b></li><li>This one has <b>peptides</b>, so it helps <b>dehydration lines</b> too</li></ul></div>
+        <div class="blk"><h5>Caption idea</h5><span class="onscreen sm">retinal peptide = smoother lines + hydration</span></div>
+      </div>
+    </article>
+    <article class="card step">
+      <div class="shot"><video src="img/o2-spots.mp4" poster="img/o2-spots.jpg" autoplay muted loop playsinline aria-label="Cream on the lines by her mouth, her forehead, then her neck"></video></div>
+      <div class="body">
+        <div class="pair"><span class="num sm">2</span> Spot cream on deep lines</div>
+        <div class="blk"><h5>How to film</h5><ul class="do"><li>The <b>Retinal Peptide Spot Cream</b> on your <b>deepest lines</b>: forehead, smile lines, neck</li></ul></div>
+        <div class="blk"><h5>Key message</h5><ul class="do"><li>Use them as a <b>pair</b>: serum all over, spot cream for <b>extra care</b> on deep lines</li></ul></div>
+        <div class="blk"><h5>Caption idea</h5><span class="onscreen sm">then spot cream on my deep lines</span></div>
+      </div>
+    </article>
+    <article class="card step">
+      <div class="shot"><video src="img/o2-wrap.mp4" poster="img/o2-wrap.jpg" autoplay muted loop playsinline aria-label="Her neck wrapped in clear plastic wrap"></video></div>
+      <div class="body">
+        <div class="pair"><span class="num sm">3</span> Wrap your deepest lines</div>
+        <div class="blk"><h5>How to film</h5><ul class="do"><li>Wrap the spot where your lines are <b>deepest</b> in <b>plastic wrap</b>, like your neck</li></ul></div>
+        <div class="blk"><h5>Key message</h5><ul class="do"><li>Your deepest lines get <b>wrapped</b> so the cream <b>sinks in</b></li></ul></div>
+        <div class="blk"><h5>Caption idea</h5><span class="onscreen sm">wrapping my deepest lines so it sinks in</span></div>
+      </div>
+    </article>
+    <article class="card step">
+      <div class="shot"><video src="img/o1-finish.mp4" poster="img/o1-finish.jpg" autoplay muted loop playsinline aria-label="Glowy, smooth skin up close as she turns her face"></video></div>
+      <div class="body">
+        <div class="pair"><span class="num sm">4</span> Show your smooth skin</div>
+        <div class="blk"><h5>How to film</h5><ul class="do"><li>Your skin <b>up close</b>, so it looks <b>smooth and hydrated</b></li></ul></div>
+        <div class="blk"><h5>Key message</h5><ul class="do"><li>If retinal <b>didn't work</b> or felt <b>harsh</b> on your skin, it's time for <b>retinal peptide</b></li></ul></div>
+        <div class="blk"><h5>Caption idea</h5><span class="onscreen sm">time to upgrade to retinal peptide</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sh"><span class="num">3</span><h2>Must keywords</h2></div>
+  <div class="must">
+    <div class="kw"><span>Retinal peptide</span><span>Wrinkles</span><span>Dehydration lines</span></div>
+    <p>Say <b>retinal peptide</b> out loud, not just retinal. Put all three in your caption.</p>
+    <div class="tags">
+      Tag <code>@vtcosmetics_global</code><br>
+      Hashtags <code>#vtcosmetics</code> <code>#retinal</code> <code>#retinalpeptide</code> <code>#wrinkles</code> <code>#dehydratedskin</code> <code>#koreanskincare</code>
+    </div>
+  </div>
+  <div class="rules">
+    <div class="rbox"><h3>Do</h3><ul class="do">
+      <li>Say <b>retinal peptide</b>, not just retinal</li>
+      <li>It's retinal with <b>peptides</b> too, so it helps not just <b>wrinkles</b> but <b>dehydration lines</b> as well</li>
+      <li>It's <b>gentle</b>: no redness or itching like other retinals, so <b>anyone</b> can use it</li>
+    </ul></div>
+    <div class="rbox no"><h3>Don't</h3><ul class="do">
+      <li><b>Don't film an unboxing</b></li>
+      <li><b>Don't mention other brand names</b></li>
+    </ul></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sh"><span class="num">4</span><h2>The products</h2></div>
+  <p class="pairnote">Use them as a <b>pair</b>. Serum all over first, then spot cream on the lines.</p>
+  <div class="pmain">
+    <img src="img/showcase.jpg" alt="Retinal Peptide Serum">
+    <div>
+      <h3>Retinal Peptide Serum</h3>
+      <p class="for"><b>Step 1.</b> All over your face</p>
+      <p class="meta">30 mL / 1.01 fl oz, dropper bottle, whole face</p>
+      <dl class="spec">
+        <dt>1. Ingredients</dt><dd><b>Retinal 0.05%</b> (500 ppm), <b>10 peptides</b>, <b>10 types of hyaluronic acid</b>, <b>adenosine</b></dd>
+        <dt>2. What it does</dt><dd>Retinal and adenosine care for <b>wrinkles</b>. Peptides and hyaluronic acid <b>hydrate</b>, so there's less of the <b>dryness, redness and itching</b> retinal is known for</dd>
+        <dt>3. What you'll see</dt><dd><b>Fine lines</b> and <b>dehydration lines</b> look smoother, skin looks <b>plump and hydrated</b></dd>
+        <dt>4. How to use</dt><dd><b>Day or night.</b> After cleansing, spread <b>a few drops</b> over your whole face. In the morning, finish with <b>sunscreen</b></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="pmain" style="--c:var(--lime)">
+    <img src="img/sq-showcase.jpg" alt="Retinal Peptide Spot Cream">
+    <div>
+      <h3>Retinal Peptide Spot Cream</h3>
+      <p class="for"><b>Step 2.</b> On the lines that need extra care</p>
+      <p class="meta">15 mL / 0.50 fl oz, squeeze tube, spot-on use</p>
+      <dl class="spec">
+        <dt>1. Ingredients</dt><dd><b>Retinal 0.1%</b> (1,000 ppm), <b>10 peptides</b>, <b>10 types of hyaluronic acid</b>, <b>adenosine</b>, <b>collagen</b></dd>
+        <dt>2. What it does</dt><dd>Twice the retinal of the serum for <b>deep lines</b>. Peptides, hyaluronic acid and collagen keep the spot <b>hydrated</b>, so it stays gentle</dd>
+        <dt>3. What you'll see</dt><dd><b>Deep lines</b> on the forehead, smile lines and neck look smoother</dd>
+        <dt>4. How to use</dt><dd><b>Day or night.</b> Last step of your routine, on the lines that need extra care. In the morning, finish with <b>sunscreen</b></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer><img src="img/logo-black.png" alt="VT Cosmetics">VT Retinal Peptide Creator Brief</footer>
+</div>
+
+
+</body>
+</html>
